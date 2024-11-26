@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envi Vwayagé</title>
+</head>
+<body>
+
+    <style>
+        body {
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            background-color: #add8e6;
+        }
+
+        .parent {
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 0.5fr 1fr 0.5fr;
+            grid-template-rows: repeat(3, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+        }
+
+        .div1 {
+            grid-area: 1 / 1 / 2 / 2;
+           place-self: center;
+           
+        }
+
+
+
+        .div2 {
+            grid-area: 1 / 2 / 4 / 3;
+            place-self: center;
+        }
+
+
+        .div3 {
+            grid-area: 1 / 3 / 2 / 4;
+        }
+
+        .div4 {
+            grid-area: 2 / 3 / 3 / 4;
+        }
+
+        .div5 {
+            grid-area: 3 / 3 / 4 / 4;
+        }
+
+        .div6 {
+            grid-area: 3 / 1 / 4 / 2;
+            
+        }
+
+       #img4{
+
+padding-top: 0%;
+padding-right: 150%;
+       } 
+
+        .div7 {
+            grid-area: 2 / 1 / 3 / 2;
+            justify-self: end;
+            align-self: end;
+        }
+
+
+        #img3 {
+            grid-area: 2 / 1 / 3 / 2;
+            
+            padding-left: 50%;
+           
+            
+        }
+
+        /* body {
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .parent {
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 0.5fr 1fr 0.5fr;
+            grid-template-rows: repeat(3, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+        }
+
+        .div1 {
+            grid-area: 1 / 1 / 2 / 2;
+            justify-self: end;
+            align-self: center;
+        }
+
+        #img1 {
+            width: 150px;
+            height: auto;
+            background: orange;
+        }
+
+        .div2 {
+            grid-area: 1 / 2 / 2 / 3;
+            grid-column-start: 2;
+            grid-column-end: five;
+            grid-row-start: row1-start;
+            grid-row-end: 3;
+        }
+
+        #img2 {
+            width: 300px;
+            height: 550px;
+            background: orange;
+        }
+
+        .div3 {
+            grid-area: 1 / 3 / 2 / 4;
+        }
+
+        .div4 {
+            grid-area: 2 / 1 / 3 / 2;
+        }
+
+        .div5 {
+            grid-area: 2 / 2 / 3 / 3;
+        }
+
+        .div6 {
+            grid-area: 2 / 3 / 3 / 4;
+        }
+
+        .div7 {
+            grid-area: 3 / 1 / 4 / 2;
+        }
+
+        .div8 {
+            grid-area: 3 / 2 / 4 / 3;
+        }
+
+        .div9 {
+            grid-area: 3 / 3 / 4 / 4;
+        } */
+    </style>
+</head>
+
+<body>
+
+    <div class="parent">
+        <div class="div1">
+            <img id="img1" src="img/paris 280.jpeg" alt="" srcset="">
+        </div>
+        <div class="div2">
+            <img id="img2" src="img/paris - 700.jpeg" alt="" srcset="">
+        </div>
+        <div class="div3"> </div>
+        <div class="div4"> </div>
+        <div class="div5"> </div>
+        <div class="div6"> 
+
+        </div>
+        <div class="div7">
+            <img id="img3" src="img/paris 120.jpeg" alt="" srcset="">
+        </div>
+    </div>
+
+
+    
+</body>
+</html>
