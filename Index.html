@@ -41,7 +41,14 @@
 
         .div3 {
             grid-area: 1 / 3 / 2 / 4;
+            justify-self: end;
         }
+
+        #img5{
+
+padding-bottom: 30%;
+padding-right: 80%;
+       } 
 
         .div4 {
             grid-area: 2 / 3 / 3 / 4;
@@ -49,7 +56,11 @@
 
         .div5 {
             grid-area: 3 / 3 / 4 / 4;
+            justify-self: center;
+            align-self: center;
         }
+
+
 
         .div6 {
             grid-area: 3 / 1 / 4 / 2;
@@ -58,7 +69,7 @@
 
        #img4{
 
-padding-top: 0%;
+padding-top: 30%;
 padding-right: 150%;
        } 
 
@@ -74,101 +85,86 @@ padding-right: 150%;
             
             padding-left: 50%;
            
-            
-        }
+         }
 
-        /* body {
-            width: 100%;
-            height: 100vh;
-            overflow: hidden;
-        }
-
-        .parent {
-            width: 100%;
-            height: 100vh;
-            display: grid;
-            grid-template-columns: 0.5fr 1fr 0.5fr;
-            grid-template-rows: repeat(3, 1fr);
-            grid-column-gap: 0px;
-            grid-row-gap: 0px;
-        }
-
-        .div1 {
-            grid-area: 1 / 1 / 2 / 2;
-            justify-self: end;
-            align-self: center;
-        }
-
-        #img1 {
-            width: 150px;
-            height: auto;
-            background: orange;
-        }
-
-        .div2 {
-            grid-area: 1 / 2 / 2 / 3;
-            grid-column-start: 2;
-            grid-column-end: five;
-            grid-row-start: row1-start;
-            grid-row-end: 3;
-        }
-
-        #img2 {
-            width: 300px;
-            height: 550px;
-            background: orange;
-        }
-
-        .div3 {
-            grid-area: 1 / 3 / 2 / 4;
-        }
-
-        .div4 {
+         #img4 {
             grid-area: 2 / 1 / 3 / 2;
-        }
+            padding-top: 30%;
 
-        .div5 {
-            grid-area: 2 / 2 / 3 / 3;
         }
+   </style>
 
-        .div6 {
-            grid-area: 2 / 3 / 3 / 4;
-        }
-
-        .div7 {
-            grid-area: 3 / 1 / 4 / 2;
-        }
-
-        .div8 {
-            grid-area: 3 / 2 / 4 / 3;
-        }
-
-        .div9 {
-            grid-area: 3 / 3 / 4 / 4;
-        } */
-    </style>
+   
 </head>
 
 <body>
 
-    <div class="parent">
+    <div id="parent" class="parent">
         <div class="div1">
+            <div class="layer" data-depth="0.1">
             <img id="img1" src="img/paris 280.jpeg" alt="" srcset="">
+            </div>
         </div>
         <div class="div2">
+            <div class="layer" data-depth="0.2">
             <img id="img2" src="img/paris - 700.jpeg" alt="" srcset="">
+            </div>
         </div>
-        <div class="div3"> </div>
-        <div class="div4"> </div>
-        <div class="div5"> </div>
+        <div class="div3">
+            <div class="layer" data-depth="0.4">
+            <img id="img5" src="img/cbg.jpeg" alt="" srcset="">
+            </div> 
+        </div>
+        <div class="div4"> 
+            <div class="layer" data-depth="0.7">
+            <img id="img6" src="img/paris 280.jpeg" alt="" srcset="">
+        </div>
+        </div>
+        <div class="div5"> 
+            <div class="layer" data-depth="0.8">
+            <img id="img7" src="img/paris 120.jpeg" alt="" srcset="">
+            </div>
+        </div>
         <div class="div6"> 
-
+            <div class="layer" data-depth="0.2">
+            <img id="img4" src="img/chd.jpeg" alt="" srcset="">
+            </div>
         </div>
         <div class="div7">
+            <div class="layer" data-depth="0.5">
             <img id="img3" src="img/paris 120.jpeg" alt="" srcset="">
+            </div>
         </div>
+
     </div>
 
+<!-- Inclusion de la librairie Parallax.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const scene = document.getElementById('parent');
+            const parallaxInstance = new Parallax(parent, {
+                relativeInput: true,
+                hoverOnly: false,
+                calibrationThreshold: 100,
+                calibrationDelay: 500,
+                supportDelay: 500,
+                calibrateX: true,
+                calibrateY: true,
+                invertX: false,
+                invertY: false,
+                limitX: false,
+                limitY: false,
+                scalarX: 10.0,
+                scalarY: 10.0,
+                frictionX: 0.1,
+                frictionY: 0.1,
+                originX: 0.5,
+                originY: 0.5
+            });
+        });
+    </script>
 
     
 </body>
