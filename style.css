@@ -1,0 +1,58 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #bfe6ff;
+  overflow: hidden;
+}
+
+#logo {
+  position: absolute;
+  left: 44%;
+  margin-top: 2%;
+}
+
+#bouton {
+  position: absolute;
+  width: 22%;
+  left: 38%;
+  top: 18%;
+}
+
+#premiere {
+  display: block;
+  position: absolute;
+  width: 8%;
+  left: 30%;
+  top: -12%;
+}
+
+#seconde {
+  position: absolute;
+  width: 12%;
+  left: 10%;
+  top: 8%;
+}
+
+#troisieme {
+  position: absolute;
+  width: 4%;
+  left: 24%;
+  top: 55%;
+}
+
+#quatrieme {
+  position: absolute;
+  width: 22%;
+  left: -10%;
+  top: 75%;
+}
+
+#cinquieme {
+  position: absolute;
+  width: 11%;
+  left: 30%;
+  top: 90%;
+}
