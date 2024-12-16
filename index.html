@@ -5,90 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Envi vwayagé</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            background-color: #bfe6ff;
-            min-height: 100vh;
-            overflow: hidden;
-            font-family: Arial, sans-serif;
-        }
-
-        #scene {
-            position: relative;
-            width: 100vw;
-            height: 100vh;
-        }
-
-        .layer {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-        }
-
-        #logo {
-            position: absolute;
-            left: 50%;
-            top: 5%;
-            transform: translateX(-50%);
-            z-index: 10;
-        }
-
-        #bouton {
-            position: absolute;
-            width: 20%;
-            left: 50%;
-            top: 20%;
-            transform: translateX(-50%);
-            z-index: 9;
-        }
-
-        .image {
-            position: absolute;
-
-            transform: translate(-50%, -50%);
-        }
-
-        #premiere {
-            width: 10%;
-            left: 30%;
-            top: 5%;
-            z-index: 5;
-        }
-
-        #seconde {
-            width: 12%;
-            left: 12%;
-            top: 32%;
-            z-index: 4;
-        }
-
-        #troisieme {
-            width: 8%;
-            left: 28%;
-            top: 60%;
-            z-index: 3;
-        }
-
-        #quatrieme {
-            width: 18%;
-            left: 7%;
-            top: 100%;
-            z-index: 2;
-        }
-
-        #cinquieme {
-            width: 15%;
-            left: 40%;
-            top: 110%;
-            z-index: 1;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -101,7 +18,7 @@
         </a>
   
     <div id="scene">
-   
+   <!--images de droite-->
         <div class="layer" data-depth="0.5">
             <img id="premiere" class="image" src="img/original.jpeg" alt="premiere">
         </div>
@@ -117,6 +34,30 @@
         <div class="layer" data-depth="0.7">
             <img id="cinquieme" class="image" src="img/original.jpeg" alt="cinquieme">
         </div>
+    <!-- fin images de droite-->
+
+    <!--images de gauche-->
+        
+    <div class="layer" data-depth="0.5">
+        <img id="sixieme" class="image" src="img/original.jpeg" alt="premiere">
+    </div>
+    <div class="layer" data-depth="0.4">
+        <img id="septieme" class="image" src="img/original.jpeg" alt="seconde">
+    </div>
+    <div class="layer" data-depth="0.5">
+        <img id="huitieme" class="image" src="img/original.jpeg" alt="troisieme">
+    </div>
+    <div class="layer" data-depth="0.6">
+        <img id="neuvieme" class="image" src="img/original.jpeg" alt="quatrieme">
+    </div>
+    <!-- fin images de gauche-->
+    
+
+
+
+
+
+
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
