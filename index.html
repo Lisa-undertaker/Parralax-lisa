@@ -1,47 +1,133 @@
 <!DOCTYPE html>
 <html lang="fr">
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Envi vwayagé</title>
-    <link href="style.css" rel="stylesheet" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #bfe6ff;
+            min-height: 100vh;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+
+        #scene {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .layer {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        #logo {
+            position: absolute;
+            left: 50%;
+            top: 5%;
+            transform: translateX(-50%);
+            z-index: 10;
+        }
+
+        #bouton {
+            position: absolute;
+            width: 20%;
+            left: 50%;
+            top: 20%;
+            transform: translateX(-50%);
+            z-index: 9;
+        }
+
+        .image {
+            position: absolute;
+
+            transform: translate(-50%, -50%);
+        }
+
+        #premiere {
+            width: 10%;
+            left: 30%;
+            top: 5%;
+            z-index: 5;
+        }
+
+        #seconde {
+            width: 12%;
+            left: 12%;
+            top: 32%;
+            z-index: 4;
+        }
+
+        #troisieme {
+            width: 8%;
+            left: 28%;
+            top: 60%;
+            z-index: 3;
+        }
+
+        #quatrieme {
+            width: 18%;
+            left: 7%;
+            top: 100%;
+            z-index: 2;
+        }
+
+        #cinquieme {
+            width: 15%;
+            left: 40%;
+            top: 110%;
+            z-index: 1;
+        }
+    </style>
 </head>
+
 <body>
+    
+        <img src="img/Group 13.png" id="logo" alt="logo">
+   
+    
+        <a href="https://g.co/doodle/a6sedme">
+            <img id="bouton" src="img/original.jpeg" alt="bouton">
+        </a>
+  
+    <div id="scene">
+   
+        <div class="layer" data-depth="0.5">
+            <img id="premiere" class="image" src="img/original.jpeg" alt="premiere">
+        </div>
+        <div class="layer" data-depth="0.4">
+            <img id="seconde" class="image" src="img/original.jpeg" alt="seconde">
+        </div>
+        <div class="layer" data-depth="0.5">
+            <img id="troisieme" class="image" src="img/original.jpeg" alt="troisieme">
+        </div>
+        <div class="layer" data-depth="0.6">
+            <img id="quatrieme" class="image" src="img/original.jpeg" alt="quatrieme">
+        </div>
+        <div class="layer" data-depth="0.7">
+            <img id="cinquieme" class="image" src="img/original.jpeg" alt="cinquieme">
+        </div>
+    </div>
 
-<img src="img/Group 13.png" id="logo" alt="logo">
-
- <a href="https://g.co/doodle/a6sedme"><img id="bouton" src="img/original.jpeg"></a>
-
- <div data-relative-input="true" id="scene">
- <!--image de gauche de haut en bas-->
- <img id="premiere"data-depth="0.2" src="img/original.jpeg">
- <img id="seconde"data-depth="0.6" src="img/original.jpeg">
- <img id="troisieme" data-depth="0.2" src="img/original.jpeg">
- <img id="quatrieme"data-depth="0.6" src="img/original.jpeg">
- <img id="cinquieme"data-depth="0.2" src="img/original.jpeg">
-<!--fin image de gauche-->
-</div>
-
-<!--image de droite
-<img id="bouton" src="img/original.jpeg">
-<img id="bouton" src="img/original.jpeg">
-<img id="bouton" src="img/original.jpeg">
-<img id="bouton" src="img/original.jpeg">
-<img id="bouton" src="img/original.jpeg">
- fin image de droite-->
-
- <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
- <!--<script>
-var scene = document.getElementById('scene');
-var parallaxInstance = new Parallax(scene);
-</script>-->
-
- 
-
-
-
-
-
-
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const scene = document.getElementById('scene');
+            const parallaxInstance = new Parallax(scene, {
+                relativeInput: true
+            });
+        });
+    </script>
 </body>
+
 </html>
