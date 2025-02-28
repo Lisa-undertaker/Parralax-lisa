@@ -1,5 +1,7 @@
 # Parralax-lisa
 
+*Conseil: mettre en plein écran*
+
 Bonjour et bienvenue sur mon carnet de voyage qui se nomme Envi Vwayagé [envie voyager]
  Le nom fait référence à mes origine mais aussi à mon envie de voyager partout de le monde.
 
@@ -15,4 +17,8 @@ Vous trouverez ci-dessous, les images du rendu sur mon écran :
 ![alt text](image.png)
 
 ![alt text](image-1.png)
+
+![alt text](image-2.png)
+
+![alt text](image-3.png)
 
