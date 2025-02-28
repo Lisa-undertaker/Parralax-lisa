@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envie de voyager</title>
+    <link rel="stylesheet" href="csspage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/atropos@2.0.2/atropos.min.css">
+</head>
+<body>
+    
+    <button class="back-button" onclick="window.location.href='kyoto.html'">← Retour</button>
+
+    <h1>KYOTO</h1>
+
+    <div class="atropos my-atropos">
+        <div class="atropos-scale">
+            <div class="atropos-rotate">
+                <div class="atropos-inner">
+                    <img src="img/paysage2.jpeg" alt="paris">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p>泣いて暮らすも一緒、笑って暮らすも一緒<br>" Le temps d'une vie est le même, qu'on le passe en pleurant ou en riant"</p>
+
+    <script src="https://cdn.jsdelivr.net/npm/atropos@2.0.2/atropos.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const myAtropos = Atropos({
+                el: '.my-atropos',
+                activeOffset: 40,
+                shadowScale: 1.05,
+                highlight: true,
+                rotateXMax: 15,
+                rotateYMax: 15,
+                stretchX: 40,
+                stretchY: 40,
+            });
+        });
+    </script>
+
+</body>
+</html>

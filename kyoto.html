@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envi vwayagé</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="color">
+    
+        <img src="img/Group 13.png" id="logo" alt="logo">
+   
+    
+        <a href="ville.html">
+            <img id="bouton" src="img/kyotoo.png" alt="bouton">
+        </a>
+  
+    <div id="scene">
+   <!--images de droite-->
+        <div class="layer" data-depth="0.5">
+            <img id="premiere" class="image" src="img/kyoto1.jpeg" alt="premiere">
+        </div>
+        <div class="layer" data-depth="0.4">
+            <img id="seconde" class="image" src="img/kyoto2.jpeg" alt="seconde">
+        </div>
+        <div class="layer" data-depth="0.5">
+            <img id="troisieme" class="image" src="img/kyoto3.jpeg" alt="troisieme">
+        </div>
+        <div class="layer" data-depth="0.6">
+            <img id="quatrieme" class="image" src="img/kyoto4.jpeg" alt="quatrieme">
+        </div>
+        <div class="layer" data-depth="0.7">
+            <img id="cinquieme" class="image" src="img/kyoto5.jpeg" alt="cinquieme">
+        </div>
+    <!-- fin images de droite-->
+
+
+
+    <!--images de gauche-->
+        
+    <div class="layer" data-depth="0.5">
+        <img id="sixieme" class="image" src="img/kyoto6.jpeg" alt="premiere">
+    </div>
+    <div class="layer" data-depth="0.4">
+        <img id="septieme" class="image" src="img/kyoto7.jpeg" alt="seconde">
+    </div>
+    <div class="layer" data-depth="0.5">
+        <img id="huitieme" class="image" src="img/kyoto8.jpeg" alt="troisieme">
+    </div>
+    <div class="layer" data-depth="0.6">
+        <img id="neuvieme" class="image" src="img/kyoto9.jpeg" alt="quatrieme">
+    </div>
+    <!-- fin images de gauche-->
+    
+
+
+    </div>
+
+    <a href="index.html">
+            <img class="flecheg" src="img/noun-arrow-2683484.svg" alt="flèche">
+        </a>
+
+    <a href="index.html">    
+            <img class="fleched" src="img/noun-arrow-2683550.svg" alt="flèche">
+         </a>
+
+         
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const scene = document.getElementById('scene');
+            const parallaxInstance = new Parallax(scene, {
+                relativeInput: true
+            });
+        });
+    </script>
+</body>
+
+</html>

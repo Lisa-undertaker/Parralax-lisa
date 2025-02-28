@@ -5,10 +5,18 @@
 }
 
 body {
-  background-color: #bfe6ff;
+  background-color: #a0ecff;
   min-height: 100vh;
   overflow: hidden;
   font-family: Arial, sans-serif;
+  transition: transform 0.8s ease-in-out;
+}
+
+body.color {
+
+
+background-color: #ffb570 ;
+
 }
 
 #scene {
@@ -29,6 +37,7 @@ body {
   top: 5%;
   transform: translateX(-50%);
   z-index: 10;
+  width: 9%;
 }
 
 #bouton {
@@ -38,6 +47,8 @@ body {
   top: 20%;
   transform: translateX(-50%);
   z-index: 9;
+  filter: drop-shadow(10px 10px 4px #ad743f6e);
+
 }
 
 .image {
@@ -51,6 +62,7 @@ body {
   left: 30%;
   top: 5%;
   z-index: 5;
+  filter: drop-shadow(10px 10px 4px #ad743f6e);
 }
 
 #seconde {
@@ -58,6 +70,8 @@ body {
   left: 12%;
   top: 32%;
   z-index: 4;
+  filter: drop-shadow(10px 10px 4px #ad743f6e);
+
 }
 
 #troisieme {
@@ -65,6 +79,8 @@ body {
   left: 28%;
   top: 60%;
   z-index: 3;
+  filter: drop-shadow(10px 10px 4px #ad743f6e);
+
 }
 
 #quatrieme {
@@ -72,6 +88,8 @@ body {
   left: 7%;
   top: 100%;
   z-index: 2;
+  filter: drop-shadow(10px 10px 4px #ad743f6e);
+
 }
 
 #cinquieme {
@@ -79,6 +97,8 @@ body {
   left: 40%;
   top: 115%;
   z-index: 1;
+  filter: drop-shadow(10px 10px 4px #ad743f6e);
+
 }
 
 #sixieme {
@@ -86,6 +106,8 @@ body {
   left: 70%;
   top: 20%;
   z-index: 1;
+  filter: drop-shadow(10px 10px 4px #ad743f6e);
+
 }
 
 #septieme {
@@ -93,16 +115,74 @@ body {
   left: 96%;
   top: 10%;
   z-index: 1;
+  filter: drop-shadow(10px 10px 4px #ad743f6e);
+
 }
 #huitieme {
   width: 10%;
   left: 79%;
   top: 60%;
   z-index: 1;
+  filter: drop-shadow(10px 10px 4px #ad743f6e);
+
 }
 #neuvieme {
   width: 12%;
   left: 98%;
   top: 90%;
   z-index: 1;
+  filter: drop-shadow(10px 10px 4px #ad743f6e);
+
 }
+
+img {
+
+  position: absolute;
+  width: 2%;
+  top: 50%;
+}
+
+.fleched {
+
+  position: absolute;
+width: 2%;
+top: 50%;
+right: 2%;
+
+}
+
+.flecheg {
+
+position: absolute;
+width: 2%;
+top: 50%;
+left: 2%;
+
+}
+
+/*** paris ****/
+
+body {
+
+display: flex;
+
+}
+
+.haut {
+
+flex-wrap: wrap;
+
+}
+
+.p-droite {
+
+  width: 40%;
+}
+
+.description {
+
+width: 20%;
+
+}
+
+

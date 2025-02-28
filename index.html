@@ -13,53 +13,60 @@
         <img src="img/Group 13.png" id="logo" alt="logo">
    
     
-        <a href="https://g.co/doodle/a6sedme">
-            <img id="bouton" src="img/original.jpeg" alt="bouton">
+        <a href="paris.html">
+            <img id="bouton" src="img/original4.png" alt="bouton">
         </a>
   
     <div id="scene">
    <!--images de droite-->
         <div class="layer" data-depth="0.5">
-            <img id="premiere" class="image" src="img/original.jpeg" alt="premiere">
+            <img id="premiere" class="image" src="img/paris1.jpeg" alt="premiere">
         </div>
         <div class="layer" data-depth="0.4">
-            <img id="seconde" class="image" src="img/original.jpeg" alt="seconde">
+            <img id="seconde" class="image" src="img/paris2.jpeg" alt="seconde">
         </div>
         <div class="layer" data-depth="0.5">
-            <img id="troisieme" class="image" src="img/original.jpeg" alt="troisieme">
+            <img id="troisieme" class="image" src="img/paris3.jpeg" alt="troisieme">
         </div>
         <div class="layer" data-depth="0.6">
-            <img id="quatrieme" class="image" src="img/original.jpeg" alt="quatrieme">
+            <img id="quatrieme" class="image" src="img/paris4.jpeg" alt="quatrieme">
         </div>
         <div class="layer" data-depth="0.7">
-            <img id="cinquieme" class="image" src="img/original.jpeg" alt="cinquieme">
+            <img id="cinquieme" class="image" src="img/paris5.jpeg" alt="cinquieme">
         </div>
     <!-- fin images de droite-->
+
+
 
     <!--images de gauche-->
         
     <div class="layer" data-depth="0.5">
-        <img id="sixieme" class="image" src="img/original.jpeg" alt="premiere">
+        <img id="sixieme" class="image" src="img/paris6.jpeg" alt="premiere">
     </div>
     <div class="layer" data-depth="0.4">
-        <img id="septieme" class="image" src="img/original.jpeg" alt="seconde">
+        <img id="septieme" class="image" src="img/paris7.jpeg" alt="seconde">
     </div>
     <div class="layer" data-depth="0.5">
-        <img id="huitieme" class="image" src="img/original.jpeg" alt="troisieme">
+        <img id="huitieme" class="image" src="img/paris8.jpeg" alt="troisieme">
     </div>
     <div class="layer" data-depth="0.6">
-        <img id="neuvieme" class="image" src="img/original.jpeg" alt="quatrieme">
+        <img id="neuvieme" class="image" src="img/paris9.jpeg" alt="quatrieme">
     </div>
     <!-- fin images de gauche-->
     
 
 
-
-
-
-
     </div>
 
+    <a href="kyoto.html">
+            <img class="flecheg" src="img/noun-arrow-2683484.svg" alt="flèche">
+        </a>
+
+    <a href="kyoto.html">    
+            <img class="fleched" src="img/noun-arrow-2683550.svg" alt="flèche">
+         </a>
+
+         
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
@@ -67,6 +74,20 @@
             const parallaxInstance = new Parallax(scene, {
                 relativeInput: true
             });
+        });
+    </script>
+    <script>
+        document.getElementById("bouton").addEventListener("click", function(event) {
+            event.preventDefault(); // Empêche le lien de s'ouvrir immédiatement
+    
+            // Ajoute une animation CSS
+            document.body.style.transition = "transform 0.8s ease-in-out";
+            document.body.style.transform = "translateY(-100vh)";
+    
+            // Redirige vers paris.html après l'animation
+            setTimeout(function() {
+                window.location.href = "paris.html";
+            }, 800); // Attends la fin de l'animation
         });
     </script>
 </body>
